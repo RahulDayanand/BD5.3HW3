@@ -3,6 +3,7 @@
 const express = require('express');
 const app = express();
 const port = 3010;
+app.use(express.json());
 const { sequelize } = require('./lib/');
 const { company } = require('./model/company.model.js');
 
